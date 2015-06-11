@@ -6,16 +6,16 @@
  *  description
  * # MainCtrl
  * Controller of the bueleApp
- *
+ * \Users\Sara\Documents\GitHub\SardegnaClima\web-client
  */
 
 angular.module('sardegnaclima')
     .factory('MainService', function ($http, App) {
 
         return {
-            summaryUrl: "../server/Apps/WebServices/MapClient/cache/summary.json",
+            //summaryUrl: "../server/Apps/WebServices/MapClient/cache/summary.json",
 
-           // summaryUrl: "http://www.sardegna-clima.it/stazioni/server/public_html/index.php/v1/summary",
+           summaryUrl: "http://www.sardegna-clima.it/stazioni/server/public_html/index.php/v1/summary",
 
             getSummary: function(){
                 var self = this;
