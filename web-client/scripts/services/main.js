@@ -83,6 +83,7 @@ angular.module('sardegnaclima')
                             "35": "#700073",
                             "36": "#5C0084"
                         };
+                        if (temp > 36) return  "#5C0084";
                         return lookupTable[parseInt(temp)];
                     },
                     "rain": function(rain){
@@ -281,10 +282,6 @@ angular.module('sardegnaclima')
             filterModel: function(model){
                 var stations = [];
                 for(var i =0; i < model.length; i++){
-                    console.log("--> MEASURE");
-                    console.log(moment(model[i].measure.date));
-                    console.log("---> yesterday");
-                    console.log(moment().subtract(1, 'day'));
                     if(moment(model[i].measure.date) > moment().subtract(1, 'day') && moment(model[i].measure.date) < moment()) 
                         stations.push(model[i]);
                 }
