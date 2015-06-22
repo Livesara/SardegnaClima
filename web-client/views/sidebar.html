@@ -4,15 +4,23 @@
  
   <div class="scrollable-content">
     <div class="list-group" toggle="off" bubble target="mainSidebar">
+        <a ng-click="setMapMode('info meteo')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='info meteo')}" >Informazioni meteo</a>
       <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='temp')}" >Temperature attuali [°C]</a>
       <a ng-click="setMapMode('tempmin')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='tempmin')}" >Minime [°C]</a>
         <a ng-click="setMapMode('tempmax')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='tempmax')}" >Massime [°C]</a>
-      <a ng-click="setMapMode('rain')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='rain')}">Piogge [mm]</a>
-     <a ng-click="setMapMode('vento'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='vento)}">Vento [km/h]</a> 
-        <a ng-click="setMapMode('punto di rugiada'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='punto di rugiada')}">Punto di rugiada [°C]</a>
-        <a ng-click="setMapMode('Umidità'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='umidità')}">Umidità [%]</a>
-        <a ng-click="setMapMode('pressione'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='pressione')}">Pressione [bar]</a>     
+      <a ng-click="setMapMode('rain')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='rain')}">Precipitazioni [mm]</a>
+     <a ng-click="setMapMode('vento'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='wind')}">Vento [km/h]</a> 
+        <a ng-click="setMapMode('punto di rugiada'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='dew')}">Punto di rugiada [°C]</a>
+        <a ng-click="setMapMode('Umidità'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='humidity')}">Umidità [%]</a>
+        <a ng-click="setMapMode('pressione'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='pressure')}">Pressione [bar]</a>     
     </div>
-
+      <div class="list-group" toggle="off" bubble target="mainSidebar">
+      <a ng-click="setMapMode('info')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='info')}" >Informazioni locali</a>
+      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Musei</a>
+         <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Ristoranti</a>
+        <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Negozi</a>
+           <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Alberghi</a>
+      </div>
+      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Mappa</a>
   </div>
 </div>
