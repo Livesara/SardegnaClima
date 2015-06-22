@@ -154,9 +154,9 @@ html, body{
     z-index: 99999999;
 }
 
-/*.map-mode-active{
+.map-mode-active{
     font-weight: bold;
-}*/
+}
 
 .map-button{
     background-image: url("../images/map.png");
@@ -228,5 +228,5 @@ hr{
 }
 
 .sidebar-left{
-    background-color: darkgray;
+    background-color: blue;
 }
