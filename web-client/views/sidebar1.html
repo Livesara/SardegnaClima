@@ -1,0 +1,37 @@
+<h3 class="app-name">Dati mappa <div class="update-container" ng-click="manualRefresh()"><i id="refresh-icon" class="fa fa-lg fa-refresh update-icon"></i><span class="update-time">{{lastRefreshTime}}</span></div> 
+
+    </h3>
+
+     
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Informazioni meteo</h3>
+  </div>
+  <div class="panel-body">
+    <div class="list-group" toggle="off" bubble target="mainSidebar">
+        
+      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='temp')}" >Temperature attuali [°C]</a>
+      <a ng-click="setMapMode('tempmin')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='tempmin')}" >Minime [°C]</a>
+        <a ng-click="setMapMode('tempmax')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='tempmax')}" >Massime [°C]</a>
+      <a ng-click="setMapMode('rain')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='rain')}">Piogge [mm]</a>
+     <a ng-click="setMapMode('vento'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='vento)}">Vento [km/h]</a> 
+        <a ng-click="setMapMode('punto di rugiada'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='punto di rugiada')}">Punto di rugiada [°C]</a>
+        <a ng-click="setMapMode('Umidità'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='umidità')}">Umidità [%]</a>
+        <a ng-click="setMapMode('pressione'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='pressione')}">Pressione [bar]</a>     
+    </div>
+      </div>
+     <div class="panel-heading">
+    <h3 class="panel-title">Informazioni locali</h3>
+  </div>
+       <div class="panel-body">
+      <div class="list-group" toggle="off" bubble target="mainSidebar">
+      
+      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Musei</a>
+         <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Ristoranti</a>
+        <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Negozi</a>
+           <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Alberghi</a>
+      </div>
+    <div class="panel-heading">       
+      <h3 class="panel-title">Meteo</h3>
+      </div>
+  </div>

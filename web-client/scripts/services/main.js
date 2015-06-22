@@ -362,6 +362,7 @@ angular.module('sardegnaclima')
                 tempmin: [],
                 tempmax: [],
                 rain: []
+                
             },
             settings:{ mode: "temp"},
             markerTypes: ["temp", "tempmin", "tempmax", "rain"],
