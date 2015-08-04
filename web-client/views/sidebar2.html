@@ -1,0 +1,9 @@
+<h3 class="app-name">Refresh <div class="update-container" ng-click="manualRefresh()"><i id="refresh-icon" class="fa fa-lg fa-refresh update-icon"></i><span class="update-time">{{lastRefreshTime}}</span></div> </h3>
+<div ng-controller="CollapseDatiAttuali">
+  	<button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Dati attuali</button>
+	<hr>
+	<div collapse="isCollapsed">
+		<div class="well well-lg">Previsioni meteo</div> 
+				<div class="well well-lg">Informazioni Locali</div> 
+  </div>
+  </div>
