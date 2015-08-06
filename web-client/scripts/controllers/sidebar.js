@@ -10,7 +10,8 @@ use strict';
 
 
 
-angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
-angular.module('ui.bootstrap.demo').controller('CollapseDatiAttuali', function ($scope) {
+
+angular.module('sardegnaclima', ['ui.bootstrap']);
+angular.module('sardegnaclima').controller('MioCtrl', function ($scope) {
   $scope.isCollapsed = false;
 });
