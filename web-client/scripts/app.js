@@ -18,14 +18,14 @@ angular
         'ngTouch',
         'ngSanitize',
         'hmTouchEvents',
-        'mobile-angular-ui'
-    'ui.bootstrap',
+        'mobile-angular-ui',
+        'ui.bootstrap'
     
   ])
     .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-      .when('/main1/:station_id', {
-        templateUrl: 'views/main1.html',
+      .when('/main/:station_id', {
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl',
             resolve: {
                 currentStation: function(Stations2, $route){
@@ -50,7 +50,7 @@ angular
         controller: 'CreditsCtrl'
       })
       .otherwise({
-        redirectTo: '/main1/0'
+        redirectTo: '/main/0'
       });
   }])
 
