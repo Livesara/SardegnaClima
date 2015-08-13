@@ -1,4 +1,4 @@
-use strict';
+'use strict';
 
 /**
  * @ngdoc function
@@ -11,7 +11,6 @@ use strict';
 
 
 
-angular.module('sardegnaclima', ['ui.bootstrap']);
-angular.module('sardegnaclima').controller('MioCtrl', function ($scope) {
+angular.module('sardegnaclima').controller('CollapseDemoCtrl', function ($scope) {
   $scope.isCollapsed = false;
 });
