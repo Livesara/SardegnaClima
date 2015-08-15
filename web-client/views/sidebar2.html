@@ -1,12 +1,13 @@
-<h3 class="app-name"><hr>REFRESH <div class="update-container" ng-click="manualRefresh()"><i id="refresh-icon" class="fa fa-lg fa-refresh update-icon"></i><span class="update-time">{{lastRefreshTime}}</span></div> </h3>
+<h3 class="app-name"><hr><div class="update-container" ng-click="manualRefresh()"><i id="refresh-icon" class="fa fa-lg fa-refresh update-icon"></i><span class="update-time">{{lastRefreshTime}}</span></div> </h3>
 
 
 
 <div ng-controller="CollapseDemoCtrl">
-	<button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+	<button class="btn btn-default" ng-click="isCollapsed = !isCollapsed"><a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='temp')}" >Dati Attuali</a></button></a>
 	<hr>
 	<div collapse="isCollapsed">
-		<div class="well well-lg">Some content</div> 
+		<div class="well well-lg">Previsioni meteo</div> 
+        <div class="well well-lg">Informazioni locali</div> 
 	</div>
 </div>
   </body>
