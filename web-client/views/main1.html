@@ -1,0 +1,11 @@
+<div class="app">
+    <div ng-show="loading" class="app-content-loading">
+        <i class="fa fa-spinner fa-spin loading-spinner"></i>
+    </div>
+    <ng-view  ng-hide="loading"></ng-view>
+    <div id="container" style="position:relative; width: 100%;height: 100%;">
+        <div id="map" style="width:100%; height: 100%;"></div>
+    </div>
+  <div style="  z-index: 1000000; position: absolute; left: 0px; bottom: 0px;background: rgba(255, 0, 0, 0);height: 25px;width: 100%;"></div>
+  <div hm-Swipe="toggle('mainSidebar')" hm-recognizer-options='{"threshold":2, "velocity":0.1}' style="  z-index: 1000000; position: absolute; left: -50px; bottom: 0px;background: rgba(255, 0, 0, 0);  height: 90%;  width: 100px;"></div>
+</div><!-- ~ .app -->

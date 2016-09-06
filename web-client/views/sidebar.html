@@ -12,15 +12,15 @@
      <a ng-click="setMapMode('vento'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='wind')}">Vento [km/h]</a> 
         <a ng-click="setMapMode('punto di rugiada'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='dew')}">Punto di rugiada [°C]</a>
         <a ng-click="setMapMode('Umidità'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='humidity')}">Umidità [%]</a>
-        <a ng-click="setMapMode('pressione'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='pressure')}">Pressione [bar]</a>     
+        <a ng-click="setMapMode('pressione'" class="list-group-item" ng-class="{'map-mode-active': (mapMode=='pressure')}">Pressione [bar]</a>  
+        
+        <table class="table table-hover" >
+            <tr ng-hide="(stations2.setMode1(summary))"><td>Temperatura attuale più alta:</td><td>{{station}}</td><td>{{valore}}°C</td>
+            </tr>
+
+        
+        
+            </table>
     </div>
-      <div class="list-group" toggle="off" bubble target="mainSidebar">
-      <a ng-click="setMapMode('info')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='info')}" >Informazioni locali</a>
-      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Musei</a>
-         <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Ristoranti</a>
-        <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Negozi</a>
-           <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Alberghi</a>
-      </div>
-      <a ng-click="setMapMode('temp')" class="list-group-item" ng-class="{'map-Local-active': (mapLocal=='temp')}" >Mappa</a>
-  </div>
+     
 </div>
