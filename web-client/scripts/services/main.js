@@ -397,7 +397,15 @@ angular.module('sardegnaclima')
             },
             refresh: function(){
                 return MainService.getSummary().then(function(summary){
-                    Stations2.setModel(summary);
+                    Stations2.setModel(summary, {
+                        Station: function(summary,){
+                     return  _.where(summary, {score: _.max(_.pluck(summary, 'value'))})
+                    }
+                     });
+                        $rootScope.Station=station.name;
+                        $rootScope.value=station.measure.temp;
+                                       
+                                      
                     SardegnaClimaMap.generateMarkers();
                     SardegnaClimaMap.init();
                     SardegnaClimaMap.cleanMap();
